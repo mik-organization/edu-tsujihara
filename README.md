@@ -1,5 +1,5 @@
-# edu-tsujihara
-辻原さん研修用リポジトリ
+# 作業時間入力
+- https://github.com/orgs/mik-organization/projects/7/views/6
 
 # issue対応について
 - 1issue、1ブランチで作業する
