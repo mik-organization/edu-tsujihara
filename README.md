@@ -11,6 +11,9 @@
 - リポジトリ：mik-organization edu-tsujihara
 - sourceブランチ：基本的にはmain
 - ブランチ名：issue番号-対応内容の概要　例）4-new-pj
+## ブランチの切り替え（PowerShellで操作）
+- git branch：現在の作業ブランチを確認
+- git checkout ブランチ名：ブランチの切り替え
 ## コミットについて
 - コミットメッセージは下記のようにする  
 issue番号 対応内容の概要　例） #4 新規プロジェクトの追加
