@@ -20,3 +20,20 @@
 ## コミットについて
 - コミットメッセージは下記のようにする  
 issue番号 対応内容の概要　例） #4 新規プロジェクトの追加
+
+# アプリ機能設計
+## HelloWorld
+```plantuml
+@startuml 
+participant "ブラウザ、Talend etc" as client
+box "backend" #lightblue
+  participant "Hello Controller" as hellocon
+endbox
+
+client -> hellocon++: GET /hello
+hellocon -> hellocon: "Hello, World!" を生成
+return: 200 OK\n"Hello, World!"
+@enduml
+```
+
+
