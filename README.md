@@ -38,5 +38,8 @@ hellocon -> hellocon: "Hello, World!" を生成
 return: 200 OK\n"Hello, World!"
 @enduml
 ```
+# DB接続情報
+- DB名：videodb
+- ユーザー／パスワード: postgres/postgres
 
 
