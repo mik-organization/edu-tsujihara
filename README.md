@@ -11,6 +11,9 @@
 - リポジトリ：mik-organization edu-tsujihara
 - sourceブランチ：基本的にはmain
 - ブランチ名：issue番号-対応内容の概要　例）4-new-pj
+  - 全角文字は使用しない
+  - 区切りが必要であれば、（ハイフン）か_（アンダースコア、アンダーバー）を使用する
+  
 ## ブランチの切り替え～コミットまで（PowerShellで操作）※追加・更新・削除同様手順
 - git branch：現在の作業ブランチを確認
 - git checkout ブランチ名：ブランチの切り替え
