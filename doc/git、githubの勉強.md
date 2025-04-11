@@ -18,7 +18,7 @@
       - fetch：リモートリポジトリからローカルリポジトリに最新の変更内容を取り込むだけで、自動的にマージ（統合）されない。
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/4052390/4744fca0-e2ec-4cdb-8ec2-b854aa434405.png)
     - status：ディレクトリの現在の状態を確認する
-    - 
+      &nbsp;
     　  1. 未追跡ファイル（コミットされていない、新規に作成されたファイル）が存在するか  
     　  2. git addされていない変更が存在するか
     　  3. git commitされていない変更が存在するか
