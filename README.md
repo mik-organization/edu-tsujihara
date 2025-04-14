@@ -45,6 +45,15 @@ return: 200 OK\n"Hello, World!"
 ```
 # DB接続情報
 - DB名：videodb
+- スキーマ名：video
 - ユーザー／パスワード: postgres/postgres
+
+# postgresql 関連
+- superuser : postgres/postgres
+- port : 5432
+- ログインコマンド：psql -U postgres
+- DB一覧　\l
+- DB 選択　\c xxxxx
+- スキーマ一覧 \dn
 
 
