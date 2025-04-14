@@ -2,8 +2,8 @@
 CREATE TABLE video (
 id INT,
 title VARCHAR(100),
-contents VARCHAR(100),
-category VARCHAR(100),
+contents contents_type,
+category category_type,
 PRIMARY KEY(id)
 );
 
