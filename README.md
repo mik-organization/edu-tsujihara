@@ -11,10 +11,15 @@
 - リポジトリ：mik-organization edu-tsujihara
 - sourceブランチ：基本的にはmain
 - ブランチ名：issue番号-対応内容の概要　例）4-new-pj
-## ブランチの切り替え～コミットまで（PowerShellで操作）
+  - 全角文字は使用しない
+  - 区切りが必要であれば、（ハイフン）か_（アンダースコア、アンダーバー）を使用する
+  
+## ブランチの切り替え～コミットまで（PowerShellで操作）※追加・更新・削除同様手順
 - git branch：現在の作業ブランチを確認
 - git checkout ブランチ名：ブランチの切り替え
 - git add ファイルパス：コミットしたいファイルを登録
+  ※コミットしたい対象のファイルだけを記載する
+- git status：追加・更新・削除したファイルが間違いないか確認
 - git commit -m "メッセージ"：メッセージをつけて変更履歴を保存
 - git push：ローカルリポジトリの内容をリモートリポジトリに送信
 ## コミットについて
@@ -38,5 +43,8 @@ hellocon -> hellocon: "Hello, World!" を生成
 return: 200 OK\n"Hello, World!"
 @enduml
 ```
+# DB接続情報
+- DB名：videodb
+- ユーザー／パスワード: postgres/postgres
 
 
