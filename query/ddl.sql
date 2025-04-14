@@ -1,7 +1,7 @@
 -- テーブルの作成
 CREATE TABLE video (
 id INT,
-title CHAR(30),
+title VARCHAR(100),
 contents VARCHAR(100),
 category VARCHAR(100),
 PRIMARY KEY(id)
