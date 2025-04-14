@@ -8,6 +8,5 @@ review VARCHAR(256),
 PRIMARY KEY(id)
 );
 
--- テーブルデータへの追加
-INSERT INTO video values(1, penthouse, null, null, null);
+
 
