@@ -44,6 +44,8 @@ return: 200 OK\n"Hello, World!"
 @enduml
 ```
 # DB接続情報
+- サーバ：localhost（開発時）
+- port：5432
 - DB名：videodb
 - スキーマ名：video
 - ユーザー／パスワード: postgres/postgres
