@@ -20,3 +20,13 @@ video_id int REFERENCES video(id),
 review VARCHAR(256),
 user_name VARCHAR(100)
 );
+
+-- テーブルに日本語名称を付与
+COMMENT ON TABLE video.video IS '動画';
+COMMENT ON TABLE video.review IS '感想';
+
+-- カラムに日本語名称を付与
+COMMENT ON COLUMN video.video.title IS '名前';
+COMMENT ON COLUMN video.video.contents IS '配信サイト';
+COMMENT ON COLUMN video.video.category IS '種類';
+COMMENT ON COLUMN video.review.review IS '感想';
