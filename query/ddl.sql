@@ -15,7 +15,7 @@ PRIMARY KEY(id)
 );
 
 COMMENT ON TABLE video.video IS '動画';
-COMMENT ON COLUMN video.video.id IS 'id';
+COMMENT ON COLUMN video.video.id IS 'ID';
 COMMENT ON COLUMN video.video.title IS 'タイトル';
 COMMENT ON COLUMN video.video.vod_service IS 'VODサービス';
 COMMENT ON COLUMN video.video.category IS '種類';
