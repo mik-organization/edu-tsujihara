@@ -23,7 +23,7 @@ user_name VARCHAR(100)
 
 -- テーブルに日本語名称を付与
 COMMENT ON TABLE video.video IS '動画';
-COMMENT ON TABLE video.review IS '感想';
+COMMENT ON TABLE video.review IS 'レビュー';
 
 -- カラムに日本語名称を付与
 COMMENT ON COLUMN video.video.title IS '名前';
