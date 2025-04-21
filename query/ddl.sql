@@ -29,4 +29,4 @@ COMMENT ON TABLE video.review IS 'レビュー';
 COMMENT ON COLUMN video.video.title IS 'タイトル';
 COMMENT ON COLUMN video.video.vod_service IS 'VODサービス';
 COMMENT ON COLUMN video.video.category IS '種類';
-COMMENT ON COLUMN video.review.review IS '感想';
+COMMENT ON COLUMN video.review.review IS 'レビュー';
