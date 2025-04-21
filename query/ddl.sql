@@ -1,11 +1,9 @@
 DROP SCHEMA IF EXISTS video CASCADE;
 CREATE SCHEMA video;
 
--- eumu中身
-CREATE TYPE video.vod_type AS enum('Netflix','dアニメストア','Hulu','Amazon prime video','U-NEXT','Disney+');
-CREATE TYPE video.category_type AS enum('国内ドラマ','国内映画','海外ドラマ','海外映画','韓国ドラマ','バラエティ','アニメ');
+CREATE TYPE video.vod_type AS enum('NETFLIX', 'D_ANIME_STORE', 'HULU', 'AMAZON_PRIME_VIDEO', 'U_NEXT', 'DISNEY_PLUS');
+CREATE TYPE video.category_type AS enum('DOMESTIC_DRAMA', 'DOMESTIC_MOVIE', 'FOREIGN_DRAMA', 'FOREIGN_MOVIE', 'KOREAN_DRAMA', 'VARIETY', 'ANIME');
 
--- テーブルの作成
 CREATE TABLE video.video (
 id INT,
 title VARCHAR(100),
