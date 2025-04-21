@@ -27,6 +27,6 @@ COMMENT ON TABLE video.review IS 'レビュー';
 
 -- カラムに日本語名称を付与
 COMMENT ON COLUMN video.video.title IS 'タイトル';
-COMMENT ON COLUMN video.video.contents IS '配信サイト';
+COMMENT ON COLUMN video.video.vod_service IS 'VODサービス';
 COMMENT ON COLUMN video.video.category IS '種類';
 COMMENT ON COLUMN video.review.review IS '感想';
