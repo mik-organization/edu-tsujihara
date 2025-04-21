@@ -29,6 +29,6 @@ user_name VARCHAR(100)
 
 COMMENT ON TABLE video.review IS 'レビュー';
 COMMENT ON COLUMN video.review.id IS 'ID';
-COMMENT ON COLUMN video.review.video_id IS '動画id';
+COMMENT ON COLUMN video.review.video_id IS '動画ID';
 COMMENT ON COLUMN video.review.review IS 'レビュー';
 COMMENT ON COLUMN video.review.user_name IS 'ユーザー名';
