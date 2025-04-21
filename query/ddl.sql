@@ -14,6 +14,12 @@ category category_type,
 PRIMARY KEY(id)
 );
 
+COMMENT ON TABLE video.video IS '動画';
+COMMENT ON COLUMN video.video.id IS 'id';
+COMMENT ON COLUMN video.video.title IS 'タイトル';
+COMMENT ON COLUMN video.video.vod_service IS 'VODサービス';
+COMMENT ON COLUMN video.video.category IS '種類';
+
 CREATE TABLE video.review(
 id int,
 video_id int REFERENCES video(id),
@@ -21,15 +27,7 @@ review VARCHAR(256),
 user_name VARCHAR(100)
 );
 
--- テーブルにコメント（日本語名称）を付与
-COMMENT ON TABLE video.video IS '動画';
 COMMENT ON TABLE video.review IS 'レビュー';
-
--- カラムにコメント（日本語名称）を付与
-COMMENT ON COLUMN video.video.id IS 'id';
-COMMENT ON COLUMN video.video.title IS 'タイトル';
-COMMENT ON COLUMN video.video.vod_service IS 'VODサービス';
-COMMENT ON COLUMN video.video.category IS '種類';
 COMMENT ON COLUMN video.review.id IS 'id';
 COMMENT ON COLUMN video.review.video_id IS '動画id';
 COMMENT ON COLUMN video.review.review IS 'レビュー';
