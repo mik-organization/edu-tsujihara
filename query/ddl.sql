@@ -9,7 +9,7 @@ CREATE TYPE category_type AS enum('国内ドラマ','国内映画','海外ドラ
 CREATE TABLE video.video (
 id INT,
 title VARCHAR(100),
-contents contents_type,
+vod_service vod_type,
 category category_type,
 PRIMARY KEY(id)
 );
