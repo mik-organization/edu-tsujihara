@@ -11,6 +11,9 @@
 - リポジトリ：mik-organization edu-tsujihara
 - sourceブランチ：基本的にはmain
 - ブランチ名：issue番号-対応内容の概要　例）4-new-pj
+  - 全角文字は使用しない
+  - 区切りが必要であれば、（ハイフン）か_（アンダースコア、アンダーバー）を使用する
+  
 ## ブランチの切り替え～コミットまで（PowerShellで操作）※追加・更新・削除同様手順
 - git branch：現在の作業ブランチを確認
 - git checkout ブランチ名：ブランチの切り替え
@@ -25,7 +28,7 @@ issue番号 対応内容の概要　例） #4 新規プロジェクトの追加
 
 # アプリ機能設計
 - 機能概要
-  - Netflixの動画を登録し、レビュー等を行う
+  - Netflix等動画配信サービスの動画を登録し、レビュー等を行う
   - おすすめ順に表示する
 ## HelloWorld
 ```plantuml
@@ -41,7 +44,18 @@ return: 200 OK\n"Hello, World!"
 @enduml
 ```
 # DB接続情報
+- サーバ：localhost（開発時）
+- port：5432
 - DB名：videodb
+- スキーマ名：video
 - ユーザー／パスワード: postgres/postgres
+
+# postgresql 関連
+- superuser : postgres/postgres
+- port : 5432
+- ログインコマンド：psql -U postgres
+- DB一覧　\l
+- DB 選択　\c xxxxx
+- スキーマ一覧 \dn
 
 
