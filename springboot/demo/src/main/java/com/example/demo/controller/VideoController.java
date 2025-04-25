@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import model.Video;
-import service.VideoService;
+import com.example.demo.model.Video;
+import com.example.demo.service.VideoService;
 
 @RestController
 @RequestMapping("/video")
@@ -21,7 +21,7 @@ public class VideoController {
     }
 
     // Postリクエストを受けて、動画をDBに登録する。
-    @PostMapping
+    @PostMapping("/video")
     public ResponseEntity<String> registerVideo(@RequestBody Video video) {
         videoService.register(video);
    // 成功したら「201 Created」を返す
