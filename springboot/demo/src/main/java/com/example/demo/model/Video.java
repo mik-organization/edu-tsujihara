@@ -5,19 +5,26 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
+import lombok.Data;
+
+@Table(name = "video")
+@Data
 @Entity
 public class Video {
 
     @Id
     private Integer id;
 
-    @Column(length = 100, nullable = false)
+    @Column(name = "title", length = 100, nullable = false)
     private String title;
 
+    @Column(name = "vod_service")
     @Enumerated(EnumType.STRING)
     private VodService vodService;
 
+    @Column(name = "category")
     @Enumerated(EnumType.STRING)
     private Category category;
 
